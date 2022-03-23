@@ -13,30 +13,30 @@ This README would normally document whatever steps are necessary to get your app
 
 - Summary of set up
 
-  - `yarn`
-  - `npm install`
+  - Install dependencies with `npm install`.
+  - Compile the application by running `npm run build-ts`.
+  - Make sure MongoDB is running at `http://localhost:27017`.
 
 - How to run the app?
 
-  - `yarn start`
-  - `npm start`
+  - Start the server with `npm start`.
+  - Visit http://localhost:3333/graphql in your web browser.
 
-- How to run the tests?
+- TODO: How to run the tests?
 
-  - `yarn test`
   - `npm test`
 
 - Dependencies
-    "@typegoose/typegoose": "^9.7.0",
-    "apollo-server-core": "^3.6.5",
-    "apollo-server-express": "^3.6.5",
-    "class-validator": "^0.13.2",
-    "express": "^4.17.3",
-    "graphql": "^15.8.0",
-    "mongoose": "^6.2.7",
-    "reflect-metadata": "^0.1.13",
-    "type-graphql": "^1.1.1",
-    "typescript": "^4.6.2"
+  -  "@typegoose/typegoose": "^9.7.0",
+  -  "apollo-server-core": "^3.6.5",
+  -  "apollo-server-express": "^3.6.5",
+  -  "class-validator": "^0.13.2",
+  -  "express": "^4.17.3",
+  -  "graphql": "^15.8.0",
+  -  "mongoose": "^6.2.7",
+  -  "reflect-metadata": "^0.1.13",
+  -  "type-graphql": "^1.1.1",
+  -  "typescript": "^4.6.2"
 
 ### Contribution guidelines
 

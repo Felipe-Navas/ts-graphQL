@@ -4,7 +4,7 @@ import { prop as Property, getModelForClass } from '@typegoose/typegoose';
 @ObjectType({ description: 'The Categories model' })
 export class Categories {
   @Field(() => ID)
-  id: string;
+  id: String;
 
   @Field()
   @Property()

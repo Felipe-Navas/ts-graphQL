@@ -6,10 +6,10 @@ import { buildSchema } from 'type-graphql';
 import { connect } from 'mongoose';
 
 import { UserResolver } from './resolvers/User';
-import { ProductResolver } from './resolvers/Product';
-import { CategoriesResolver } from './resolvers/Categories';
 import { CartResolver } from './resolvers/Cart';
 import { OrderResolver } from './resolvers/Order';
+import { ProductResolver } from './resolvers/Product';
+import { CategoriesResolver } from './resolvers/Categories';
 
 const main = async () => {
   const schema = await buildSchema({
@@ -25,13 +25,13 @@ const main = async () => {
   });
 
   // create mongoose connection
-  const mongoose = await connect('mongodb://localhost:27017/test');
+  const mongoose = await connect('mongodb://localhost:27017/testGraphQL');
   await mongoose.connection;
 
   const server = new ApolloServer({
     schema,
     plugins: [ApolloServerPluginLandingPageGraphQLPlayground],
-  });
+  }) as any;
 
   const app = Express();
 
