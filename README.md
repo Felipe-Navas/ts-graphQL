@@ -35,8 +35,14 @@ This README would normally document whatever steps are necessary to get your app
   -  "graphql": "^15.8.0",
   -  "mongoose": "^6.2.7",
   -  "reflect-metadata": "^0.1.13",
-  -  "type-graphql": "^1.1.1",
-  -  "typescript": "^4.6.2"
+  -  "type-graphql": "^1.1.1"
+
+- Dependencies dev
+  - "@types/express": "github:types/express",
+  - "@types/node": "^17.0.22",
+  - "nodemon": "^2.0.15",
+  - "ts-node": "^10.7.0",
+  - "typescript": "^4.6.2"
 
 ### Contribution guidelines
 
